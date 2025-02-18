@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоматологія Романа Федака</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Стоматологія Романа Федака</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                    <li><a href="#testimonials">Відгуки</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-main">
+            <h2>Ваше здоров'я — наша турбота</h2>
+            <p>Сучасні стоматологічні послуги в комфортній атмосфері</p>
+            <a href="/consultation" class="btn">Записатись на консультацію</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Про нас</h2>
+            <p>Стоматологія Романа Федака — це сучасна клініка, де здоров'я і краса вашої усмішки є нашою головною метою...</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наші послуги</h2>
+            <ul>
+                <li>Профілактичні огляди</li>
+                <li>Естетична реставрація</li>
+                <li>Імплантація зубів</li>
+                <li>Хірургічна Стоматологія</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Відгуки -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Відгуки наших пацієнтів</h2>
+            <div class="testimonial-container">
+                {% for testimonial in testimonials %}
+                    <div class="testimonial">
+                        <p>"{{ testimonial.text }}"</p>
+                        <span>- {{ testimonial.name }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакти</h2>
+            <p>Адреса: м. Шептицький, вул. Шевська, 16</p>
+            <p>Телефон: <a href="tel:+380123456789">+380(97) 701 84 17</a></p>
+            <p>Email: <a href="mailto:info@fedakdentistry.com">info@fedakdentistry.com</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Стоматологія Романа Федака. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>

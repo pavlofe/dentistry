@@ -1,0 +1,144 @@
+/* Основні стилі */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Хедер */
+.header {
+    background: #0066cc;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Головна секція */
+.hero {
+    background-image: url('/static/images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Секції */
+section {
+    padding: 60px 0;
+}
+
+.about, .services, .contact {
+    text-align: center;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin: 10px 0;
+}
+
+/* Футер */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero-main{
+    background-color: #33333350;
+    width: fit-content;
+    padding: 1rem 5rem;
+}
+
+
+.consultation-form {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.consultation-form .form-group {
+    margin-bottom: 15px;
+}
+
+.consultation-form .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.consultation-form .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.consultation-form .form-group input[type="tel"],
+.consultation-form .form-group input[type="email"],
+.consultation-form .form-group input[type="text"] {
+    max-width: 500px;
+    margin-top: 5px;
+}
+
+.consultation-form .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.consultation-form .btn:hover {
+    background-color: #45a049;
+}

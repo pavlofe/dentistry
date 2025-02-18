@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запис на консультацію</title>
+    <link rel="stylesheet" href="/static/styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Запис на консультацію</h1>
+        </div>
+    </header>
+
+    <section class="consultation-form">
+        <div class="container">
+            <h2>Будь ласка, заповніть форму для запису на консультацію</h2>
+            <form action="/success" method="POST">
+                <div class="form-group">
+                    <label for="fullName">ПІБ:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Ваше ПІБ">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефону:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Ваш номер телефону">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ваш email">
+                </div>
+                <button type="submit" class="btn">Записатись</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Стоматологія Романа Федака. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
